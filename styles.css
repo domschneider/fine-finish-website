@@ -76,6 +76,7 @@ button {
   height: 100px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   cursor: pointer;
+  opacity: .75;
 }
 
 button:hover {
@@ -116,7 +117,7 @@ button:hover {
 }
 
 .nav-list a:hover {
-  color: white;
+  color: #000000;
 }
 
 .nav-logo img {

@@ -4,28 +4,33 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   margin: 0;
+}
+
+.request-quote-button {
+  text-align: center;
+  height: 15vh;
 }
 
 .homePageBody {
   text-align: center;
   margin-left: 400px;
   margin-right: 400px;
+  height: 50vh;
 }
 
 ul {
-  /* list-style-type: none;
-  margin: 0;
-  padding: 0; */
   text-align: right;
 }
 
 footer {
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  /* background-color: #767676; */
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin-top: 10;
+  justify-content: center;
+  background-color: #767676;
   align-content: center;
   /* width: 100%; */
   height: 3.5rem;;
@@ -83,6 +88,7 @@ button:hover {
   display: flex;
   background-color: #FFFFFF;
   opacity: .5;
+  /* height: 20vh; */
 }
 
 .nav-list {
@@ -119,7 +125,7 @@ button:hover {
 }
 
 .slider {
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -195,4 +201,5 @@ hr {
 
 .mission-statement {
   /* width: 50%; */
+  color: black;
 }

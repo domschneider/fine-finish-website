@@ -102,7 +102,7 @@ button:hover {
 
 .nav-list li {
   list-style: none;
-  padding: 26px 60px;
+  padding: 26px 50px;
 }
 
 .nav-list li a {
@@ -198,9 +198,22 @@ hr {
   margin-right: 400px;
   margin-top: 50px;
   padding: 10px;
+  background-color: #767676;
 }
 
 .mission-statement {
   /* width: 50%; */
   color: black;
+}
+
+.our-history-text {
+  text-align: center;
+  font-size: 40px;
+  align-items: center;
+  border: 5px solid;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #767676;
 }

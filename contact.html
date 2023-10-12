@@ -20,9 +20,25 @@
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <form action="mailto:dschne29@gmail.com" method="post" enctype="text/plain">
-            text1<input type="text" name="add_name">
-            <input type="submit" value="Send">
+        <form id="contact-form" method="POST" action="sendmail.php">
+            <div class="form-row form-error" style="display:none;"></div>
+            <div class="form-row">
+                <label for="contact-form-name">Name:</label>
+                <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="contact-form-email">Email:</label>
+                <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="contact-form-phone">Phone:</label>
+                <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+            </div>
+            <div class="form-row">
+                <label for="contact-form-message">Message:</label>
+                <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>

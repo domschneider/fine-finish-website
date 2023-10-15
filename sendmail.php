@@ -1,4 +1,16 @@
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<?php
+    // $name = $_POST['name'];
+    // $visitor_email = $_POST['email'];
+    // $message = $_POST['message'];
+    // $email_from = 'dschne29@gmail.com';
+    // $email_subject = "New Form submission";
+    // $email_body = "You have received a new message from the user $name.\n";
+    // $to = "dschne29@gmail.com.com";
+    // $headers = "From: $email_from \r\n";
+    // $headers = "Reply-To: $visitor_email \r\n";
+
+    // mail($to,$email_subject,$email_body,$headers);
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(
         !empty($_POST['name'])
         && !empty($_POST['email'])
@@ -9,23 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $phone = $_POST["phone"];
         $message = $_POST["message"];
 
-        <?php
-            $recaptcha_secret = "your-recaptcha-secret-key";
-            $recaptcha_response = $_POST["g-recaptcha-response"];
-
-            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response";
-            $response = file_get_contents($url);
-            $response_data = json_decode($response, true);
-
-            if (!$response_data["success"]) {
-                // reCaptcha validation failed, return an error message
-            } else {
-                // Your email sending code here
-            }
-        ?>
 
         $to = "dschne29@gmail.com";
-        $subject = "Quote Request";
+        $subject = "New Contact Form Submission";
         $body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
         $headers = "From: {$email}";
 
@@ -37,3 +35,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+?>

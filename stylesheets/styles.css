@@ -131,14 +131,43 @@ button:hover {
   height: 150px;
 }
 
-.slider {
+.company-logo img {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.thankyou-text {
+  text-align: center;
+}
+
+.thankyou-text h6 {
+  height: 25px;
+}
+
+.back-home-button {
+  text-align: center;
+}
+
+.home-slider {
   /* overflow: hidden; */
   width: 100vw;
   height: 100vh;
   position: relative;
 }
 
-.slider .slide {
+.project-slider {
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.home-slider .home-slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,35 +175,86 @@ button:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: slide 10s infinite;
+  animation: home-slider 25s infinite;
 }
 
-.slider .slide:nth-child(1) {
+.project-slider .project-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: project-slider 50s infinite;
+}
+
+.home-slider .home-slide:nth-child(1) {
   background-image: url('https://images.unsplash.com/photo-1595356700395-6f14b5c1f33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
   animation-delay: -0;
 }
 
-.slider .slide:nth-child(2) {
+.home-slider .home-slide:nth-child(2) {
   background-image: url('https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -2s;
+  animation-delay: -5s;
 }
   
-.slider .slide:nth-child(3) {
+.home-slider .home-slide:nth-child(3) {
   background-image: url('https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -4s;
+  animation-delay: -10s;
 }
   
-.slider .slide:nth-child(4) {
+.home-slider .home-slide:nth-child(4) {
   background-image: url('https://images.unsplash.com/photo-1517430554953-a5ba4678fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -6s;
+  animation-delay: -15s;
 }
 
-.slider .slide:nth-child(5) {
+.home-slider .home-slide:nth-child(5) {
   background-image: url('https://images.unsplash.com/photo-1583161178154-c362b3459d29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
-  animation-delay: -8s;
+  animation-delay: -20s;
 }
 
-@keyframes slide {
+.project-slider .project-slide:nth-child(1) {
+  background-image: url('https://images.unsplash.com/photo-1595356700395-6f14b5c1f33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -0;
+}
+
+.project-slider .project-slide:nth-child(2) {
+  background-image: url('https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -10s;
+}
+  
+.project-slider .project-slide:nth-child(3) {
+  background-image: url('https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -20s;
+}
+  
+.project-slider .project-slide:nth-child(4) {
+  background-image: url('https://images.unsplash.com/photo-1517430554953-a5ba4678fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -30s;
+}
+
+.project-slider .project-slide:nth-child(5) {
+  background-image: url('https://images.unsplash.com/photo-1583161178154-c362b3459d29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  animation-delay: -40s;
+}
+
+@keyframes home-slider {
+  0%, 15%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+@keyframes project-slider {
   0%, 15%, 100% {
     transform: translateX(0);
     animation-timing-function: ease;
@@ -223,4 +303,20 @@ hr {
   margin-bottom: 50px;
   padding: 10px;
   background-color: #767676;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-size: 32px;
+}
+
+.portfolio-list li {
+  list-style: none;
+}
+
+.project-description {
+  text-align: center;
 }

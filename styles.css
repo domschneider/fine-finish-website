@@ -140,6 +140,13 @@ button:hover {
   margin-top: 50px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  gap: 1rem;
+}
+
 .thankyou-text {
   text-align: center;
 }

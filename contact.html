@@ -18,35 +18,20 @@
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <form id="contact-form" method="POST" action="sendmail.php">
-            <div class="form-row form-error" style="display:none;"></div>
-            <div class="form-row">
-                <label for="contact-form-name">Name:</label>
-                <input id="contact-form-name" class="form-input" type="text" name="name" required>
-            </div>
-            <div class="form-row">
-                <label for="contact-form-email">Email:</label>
-                <input id="contact-form-email" class="form-input" type="email" name="email" required>
-            </div>
-            <div class="form-row">
-                <label for="contact-form-phone">Phone:</label>
-                <input id="contact-form-phone" class="form-input" type="tel" name="phone">
-            </div>
-            <div class="form-row">
-                <label for="contact-form-message">Message:</label>
-                <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
-            </div>
+        <h1>Request a Quote Today</h1>
+        <hr>
+        <p>Please fill out the following form to request an appointment for a quote</p>
+        <form action="https://formspree.io/f/xqkvnvzj" method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="Phone" placeholder="Phone Number" required>
+            <select name="preferredContact">
+                <option>Email</option>
+                <option>Call</option>
+                <option>Text</option>
+            </select>
+            <textarea name="Message" placeholder="Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
-        <!-- <form method="post" name="myemailform" action="sendmail.php">
-
-            Enter Name:	<input type="text" name="name">
-            
-            Enter Email Address:	<input type="text" name="email">
-            
-            Enter Message:	<textarea name="message"></textarea>
-            
-            <input type="submit" value="Send Form">
-        </form> -->
     </body>
 </html>

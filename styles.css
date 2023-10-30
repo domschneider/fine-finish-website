@@ -143,10 +143,31 @@ button:hover {
 form {
   display: flex;
   flex-direction: column;
-  width: 24rem;
+  /* width: 24rem; */
   gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  /* width: 50%; */
 }
 
+.contact-form {
+  text-align: center;
+  
+}
+
+input, 
+select,
+textarea {
+  padding: 1.4rem;
+  background: transparent;
+  border: 1px solid black;
+  width: 25%;
+}
+
+textarea {
+  height: 6rem;
+}
 .thankyou-text {
   text-align: center;
 }

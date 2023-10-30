@@ -18,21 +18,24 @@
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <h1>Request a Quote Today</h1>
-        <hr>
-        <p>Please fill out the following form to request an appointment for a quote</p>
-        <p>Please allow 7 business days for a response</p>
-        <form action="https://formspree.io/f/xqkvnvzj" method="POST">
-            <input type="text" name="Name" placeholder="Full Name" required>
-            <input type="email" name="Email" placeholder="Email" required>
-            <input type="text" name="Phone" placeholder="Phone Number" required>
-            <select name="Preferred Contact Method">
-                <option>Email</option>
-                <option>Call</option>
-                <option>Text</option>
-            </select>
-            <textarea name="Message" placeholder="Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="contact-form">
+            <h1>Request a Quote Today</h1>
+            <hr>
+            <p>Please fill out the following form to request an appointment for a quote</p>
+            <p>Please allow 7 business days for a response</p>
+            <form action="https://formspree.io/f/xqkvnvzj" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="text" name="Phone" placeholder="Phone Number" required>
+                <p>Preferred Method of Contact</p>
+                <select name="Contact Method" placeholder="Preferred Method of Contact">
+                    <option>Text</option>
+                    <option>Call</option>
+                    <option>Email</option>
+                </select>
+                <textarea name="Message" placeholder="Message" required></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
     </body>
 </html>

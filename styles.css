@@ -3,30 +3,18 @@
 }
 
 body {
-  /* background-color: #FFFFFF; */
+  background-color:  rgba(0, 0, 0, 0.938);
   margin: 0;
-}
-
-.request-quote-button {
-  text-align: center;
-  height: 15vh;
-}
-
-.portfolio-button {
-  text-align: center;
-  height: 15vh;
-  margin-top: 20;
-}
-
-.homePageBody {
-  text-align: center;
-  margin-left: 400px;
-  margin-right: 400px;
-  height: 50vh;
 }
 
 ul {
   text-align: right;
+}
+
+hr {
+  height: 5px;
+  background-color: white;
+  width: 50%;
 }
 
 footer {
@@ -46,12 +34,13 @@ h1 {
   margin-bottom: 0;
   /* width: 2000px; */
   text-align: center;
-  background-color: #FFFFFF;
-  opacity: .5;
+  /* background-color: #FFFFFF;
+  opacity: .5; */
   align-content: center;
   /* margin-left: 400px;
   margin-right: 400px; */
   border: black;
+  color: white;
 }
 
 h4 {
@@ -72,7 +61,7 @@ h6 {
 }
 
 button {
-  background-color: black;
+  background-color: transparent;
   color: white;
   text-align: center;
   font-size: 28px;
@@ -81,7 +70,7 @@ button {
   height: 100px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   cursor: pointer;
-  opacity: .8;
+  /* opacity: .8; */
 }
 
 button:hover {
@@ -90,11 +79,12 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* Navagation Styling ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
 .nav-bar {
   display: flex;
   background-color: #FFFFFF;
   opacity: .5;
-  
   /* height: 20vh; */
 }
 
@@ -130,54 +120,22 @@ button:hover {
   width: 80%;
   height: 80%;
   margin-top: 2%;
+  background-color: transparent;
+  color: white;
 }
 
-.company-logo img {
+/* Home Page Styling ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.homePageBody {
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+  height: 50vh;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  /* width: 24rem; */
-  gap: 1rem;
+.request-quote-button {
   text-align: center;
-  justify-content: center;
-  place-items: center;
-  /* width: 50%; */
-}
-
-.contact-form {
-  text-align: center;
-  
-}
-
-input, 
-select,
-textarea {
-  padding: 1.4rem;
-  background: transparent;
-  border: 1px solid black;
-  width: 25%;
-}
-
-textarea {
-  height: 6rem;
-}
-.thankyou-text {
-  text-align: center;
-}
-
-.thankyou-text h6 {
-  height: 25px;
-}
-
-.back-home-button {
-  text-align: center;
+  height: 15vh;
 }
 
 .home-slider {
@@ -185,15 +143,6 @@ textarea {
   width: 100%;
   height: 100vh;
   position: relative;
-}
-
-.project-slider {
-  overflow: hidden;
-  width: 50vw;
-  height: 50vh;
-  position: relative;
-  margin-left: 25%;
-  margin-top: 5%;
 }
 
 .home-slider .home-slide {
@@ -205,17 +154,6 @@ textarea {
   background-size: cover;
   background-position: center;
   animation: home-slider 25s infinite;
-}
-
-.project-slider .project-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  animation: project-slider 50s infinite;
 }
 
 .home-slider .home-slide:nth-child(1) {
@@ -258,11 +196,7 @@ textarea {
   }
 }
 
-hr {
-  height: 5px;
-  background-color: black;
-  width: 50%;
-}
+/* About Us Page Styling ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .mission-statement-text {
   text-align: center;
@@ -273,12 +207,12 @@ hr {
   margin-right: 400px;
   margin-top: 50px;
   padding: 10px;
-  background-color: #767676;
+  /* background-color: #767676; */
 }
 
 .mission-statement {
   /* width: 50%; */
-  color: black;
+  color: white;
 }
 
 .our-history-text {
@@ -291,8 +225,55 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 10px;
-  background-color: #767676;
+  /* background-color: #767676; */
+  color: white;
 }
+
+.portfolio-button {
+  text-align: center;
+  height: 15vh;
+  margin-top: 20;
+}
+
+/* Contact Page Styling ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* width: 24rem; */
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  color: white;
+  /* width: 50%; */
+}
+
+.contact-form {
+  text-align: center;
+  color: white;
+}
+
+input, 
+select,
+textarea {
+  padding: 1.4rem;
+  background: transparent;
+  border: 1px solid white;
+  width: 25%;
+  color: white;
+}
+
+option {
+  color: white;
+  background-color: transparent;
+}
+
+textarea {
+  height: 6rem;
+}
+
+/* Portfolio Page Styling ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
 figure {
   text-align: center;
@@ -300,12 +281,23 @@ figure {
 
 figcaption {
   font-size: 32px;
+  color: white;
 }
 
 .portfolio-list li {
   list-style: none;
 }
 
-.project-description {
+/* Thank you Page Styling (Not in use, cause users are redirect to formspree thank you page)---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.thankyou-text {
+  text-align: center;
+}
+
+.thankyou-text h6 {
+  height: 25px;
+}
+
+.back-home-button {
   text-align: center;
 }

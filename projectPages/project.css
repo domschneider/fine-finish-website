@@ -7,7 +7,7 @@
 }
 
 body{
-  /* background-color: rgba(0, 0, 0, 0.938); */
+  background-color: rgba(0, 0, 0, 0.938);
 }
 
 .main-wrapper{
@@ -36,15 +36,14 @@ body{
   position: absolute;
   transition: transform .4s ease-in-out;
 }
+
 .slides h2{
-  
   position: relative;
   top: 5rem;
   left: 1rem;
   backdrop-filter: blur(7px);
   width: 9rem;
   padding: 1rem;
-
 }
 .slides img{
   width: 100%;
@@ -60,14 +59,13 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .slider-btns span{
   padding: 1rem 1.2rem;
   font-size: 1.5rem;
-  background: black;
+  background: white;
   border-radius: 50%;
-  color: white;
+  color: rgba(0, 0, 0, 0.938);
   cursor: pointer;
 }
 .dots{
@@ -105,17 +103,13 @@ body{
 
 .nav-bar {
   display: flex;
-  background-color: #FFFFFF;
-  opacity: .5;
-  
-  /* height: 20vh; */
+  /* background-color: rgba(0, 0, 0, 0.938);
+  opacity: .2; */
 }
 
 .nav-list {
   display: flex;
   width: 60%;
-  /* align-content: right;
-  align-items: flex-end; */
   text-align: right;
 }
 
@@ -126,7 +120,7 @@ body{
 
 .nav-list li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 40px;
 }
 
@@ -136,7 +130,7 @@ body{
 }
 
 .nav-list a:hover {
-  color: #000000;
+  color: white;
 }
 
 .nav-logo img {
@@ -150,8 +144,9 @@ h1 {
   margin-bottom: 0;
   /* width: 2000px; */
   text-align: center;
-  background-color: #FFFFFF;
-  opacity: .5;
+  /* background-color: #FFFFFF; */
+  color: white;
+  /* opacity: .5; */
   align-content: center;
   /* margin-left: 400px;
   margin-right: 400px; */
@@ -160,12 +155,13 @@ h1 {
 
 hr {
   height: 5px;
-  background-color: black;
+  background-color: white;
   width: 50%;
 }
 
 .project-description {
   text-align: center;
+  color: white;
 }
 
 .company-logo img {

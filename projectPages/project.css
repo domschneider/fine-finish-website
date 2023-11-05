@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: rgba(0, 0, 0, 0.938);
+  background-color: rgba(0, 0, 0, 0.888);
 }
 
 .main-wrapper{
@@ -66,7 +66,7 @@ body{
   font-size: 1.5rem;
   background: white;
   border-radius: 50%;
-  color: rgba(0, 0, 0, 0.938);
+  color: rgba(0, 0, 0, 0.888);
   cursor: pointer;
 }
 .dots{
@@ -104,8 +104,9 @@ body{
 
 .nav-bar {
   display: flex;
-  /* background-color: rgba(0, 0, 0, 0.938);
-  opacity: .2; */
+  /* background-color: rgba(0, 0, 0, 0.938); */
+  background-color: transparent;
+  /* opacity: .2; */
 }
 
 .nav-list {
@@ -128,6 +129,7 @@ body{
 .nav-logo {
   width: 40%;
   margin-left: 10%;
+  background-color: transparent;
 }
 
 .nav-list a:hover {
@@ -138,6 +140,7 @@ body{
   width: 80%;
   height: 80%;
   margin-top: 2%;
+  background-color: transparent;
 }
 
 h1 {

@@ -66,6 +66,7 @@ h6 {
 
 button {
   background-color: transparent;
+  display: block;
   color: white;
   text-align: center;
   font-size: 28px;
@@ -74,7 +75,6 @@ button {
   height: 100px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   cursor: pointer;
-  /* opacity: .8; */
 }
 
 button:hover {
@@ -137,6 +137,11 @@ button:hover {
   height: 50vh;
 }
 
+.request-quote-button button {
+  text-align: center;
+  /* margin-left: 50%; */
+}
+
 .homePageBody h1 {
   opacity: .5;
   background-color: #FFFFFF;
@@ -188,11 +193,9 @@ button:hover {
 }
 
 .request-quote-button {
-  text-align: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.888);
   color: white;
-  text-align: center;
   font-size: 28px;
   border-radius: 12px;
   width: 250px;
@@ -200,6 +203,11 @@ button:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   cursor: pointer;
   opacity: .8;
+  align-content: center;
+  display: grid;
+  /* justify-content: center; */
+  margin-left: 45%;
+  margin-right: 45%;
 }
 
 .home-slider {

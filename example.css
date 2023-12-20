@@ -39,9 +39,34 @@ footer {
     margin-bottom: 100px;
 }
 
-.card-title {
-    text-decoration: underline;
+
+.footer {
+    bottom: 0;
+    position: relative;
+    padding: 20px 0;
 }
+
+hr {
+  height: 5px;
+  background-color: white;
+}
+
+.btn-custom {
+      background-color: white;
+      color: black;
+}
+
+.form-control-dark option {
+      color: black;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
 /* 
 .custom-title {
     font-size: 1rem;

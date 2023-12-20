@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,7 +19,7 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -28,35 +28,53 @@
       <li class="nav-item">
         <a class="nav-link" href="portfolio2.html">Portfolio</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="contact2.html">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
-<div class="home-body">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1595356700395-6f14b5c1f33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://images.unsplash.com/photo-1591019052241-e4d95a5dc3fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="...">
-            </div>
-          </div>
-        </div>
-      </div>
+
+<div class="container mt-5">
+  <div class="text-center">
+    <h1>Request a Quote</h1>
+    <hr>
+    <p>Please fill out the following form to request an appointment for a quote</p>
+    <p>Please allow 10 business days for a response</p>
+  </div>
+  <form action="https://formspree.io/f/xqkvnvzj" method="POST">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name" required>
     </div>
-</div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" name="Phone" placeholder="Enter your phone number" required>
+    </div>
+     <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="phone" name="Message" placeholder="Description about your next home project" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="contactMethod">Preferred Method of Contact</label>
+      <select class="form-control form-control-dark" name="Contact Method" id="contactMethod">
+        <option selected>Click or Tap to Choose Preference</option>
+        <option value="Text">Text</option>
+        <option value="Call">Call</option>
+        <option value="Email">Email</option>
+      </select>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-custom">Submit</button>
+    </div>
+  </form>
 </div>
 
-<footer class="fixed-bottom center-footer bg-dark text-white">Powered by <a href="#">Dominic Schneider</a></footer>
+<footer class="center-footer bg-dark text-white">Powered by <a href="#">Dominic Schneider</a></footer>
 
 <!-- Bootstrap JS (Optional - for dropdowns, toggles, etc.) -->
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->

@@ -40,11 +40,11 @@ footer {
 }
 
 
-.footer {
+/* .footer {
     bottom: 0;
     position: relative;
     padding: 20px 0;
-}
+} */
 
 hr {
   height: 5px;
@@ -67,14 +67,14 @@ button:hover {
 }
 
 
-/* 
-.custom-title {
+
+/* .custom-title {
     font-size: 1rem;
-}
+} */
 
 .custom-text {
-    font-size: 0.5rem;
-} */
+    font-size: 1.25rem;
+}
 
 /* .card-body {
     max-width: fit-content; 
